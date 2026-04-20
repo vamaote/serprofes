@@ -1,0 +1,16 @@
+body {background-image: url(https://4kwallpapers.com/images/wallpapers/earth-horizon-distant-planet-milky-way-blue-planet-astronomy-3840x2160-8987.png);
+background-size: cover;
+background-attachment: fixed;   
+background-position: center;
+background-repeat: no-repeat;
+}   
+h1 { 
+    color: white;
+    text-align: center;
+    font-size: 50px;
+}
+h2  {
+    color: rgb(243, 248, 248);
+    text-align: None;
+    font-size: 30px;
+}
