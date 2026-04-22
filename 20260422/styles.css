@@ -1,0 +1,94 @@
+/* 1. Reseteo Basico */
+/* El asterisco (*) significa que aplica a todo */
+*{
+    margin: 0;
+    padding: 0;
+    /* Hace que el tamaño de las cajas sea predecible */
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: rgba(82, 194, 82, 0.596);
+    color: white;
+}
+/* 2. PINTADO DE ZONAS PRINCIPALES */
+header{
+    /*background color = color de fondo*/
+    background-color: rgb(194, 32, 67);
+    /* color = a color de la fuente */
+    color: white;
+    /* text-align centra el texto */
+    text-align: center;
+    /* padding: espacio hacia adentro de la caja */
+    padding: 20px;
+    
+}
+
+footer{
+    background-color: rgb(24, 23, 23);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    /* margin: espacio hacia afuera de la caja (lo empuja hacia abajo) */
+    margin margin-top: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* 3. EL MODELO DE LA CAJA */
+
+.caja{
+    background-color: rgb(137, 63, 180);
+    color: white;
+    font-size: 24px;
+    /* font-weight: bold = negrita */
+    font-weight: bold;
+    /* Damos formato a la caja */
+    padding: 30px; /* engorda la caja hacia adentro*/
+    margin: 15px; /*separa la caja de otras cosas */
+    border: 5px solid rgb(19, 18, 18); /* formato del borde de la caja*/
+    border-radius: 10px; /* redondeo de las esquinas */
+
+
+
+}
+
+
+
+/* Estado al pasar el cursor (hover) */
+.caja:hover {
+    background-color: rgb(0, 255, 34); /* Nuevo color al pasar el cursor */
+}
+
+
+.anuncio{
+    background-color: rgb(255, 255, 255);
+    color: rgb(252, 249, 249);
+    font-size: 50px;
+    padding: 20px;
+    margin: 20px;
+    border: 3px dashed rgb(143, 139, 139);
+    border-radius: 5px;
+    background-image: url(https://img.freepik.com/foto-gratis/concepto-transformacion-digital-fondo-tecnologia-microchips-ia_53876-124669.jpg);
+}
+
+
+
+/* 4. LA MAGIA DE FLEXBOX */
+nav{
+    background-color: rgb(29, 28, 28);
+    color: rgb(236, 136, 136);
+    display: flex; /* activa el modo flexbox */
+    justify-content: space-around; /* distribuye los elementos con espacio alrededor */
+    padding: 15px;
+    align-items: center;
+}
+/* 5. EFECTOS DE HOVER: cambia de color */
+.link:hover{
+    color: rgb(243, 142, 142);
+    /* aparece la manita */
+    text-decoration: underline;
+    cursor: pointer;
+}
