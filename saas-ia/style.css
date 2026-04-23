@@ -1,16 +1,83 @@
-body {background-image: url(https://4kwallpapers.com/images/wallpapers/earth-horizon-distant-planet-milky-way-blue-planet-astronomy-3840x2160-8987.png);
-background-size: cover;
-background-attachment: fixed;   
-background-position: center;
-background-repeat: no-repeat;
-}   
-h1 { 
-    color: white;
-    text-align: center;
-    font-size: 50px;
+/* CSS PROYECTO SAAS */
+/* 1. RESETEO Y BASES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'segoe ui', tahoma, geneva, verdana, sans-serif;
 }
-h2  {
+
+
+/* 2. LAYOUT PRINCIPAL (flexbox) */
+.app-container {
+    display: flex; /*Podemos sidebar y chat en fila*/
+    min-height: 100vh; /*ocupar el 100% de la altura de la ventana*/
+    overflow: hidden; /*Evita que la web entera haga scroll*/
+}
+
+.sidebar {
+    width: 260px;
+    background-color: #d3643b; /*Color oscuro tipo CHATGPT*/
     color: white;
-    text-align: None;
-    font-size: 30px;
+    display: flex;
+    flex-direction: column; /*los elementos del menu van*/
+    justify-content: space-between; /*logo arriba, perfil abajo*/
+    padding: 15px;
+}
+
+.menu-lateral button {
+    background:transparent;
+    border: 1px solid rgb(150, 81, 81);
+    color: white;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 20px;
+
+}
+
+/* 4. AREA DE CHAT */
+.chat-area {
+    flex-grow: 1; /*ocupa todo el espacio restante de la pantalla*/
+    display: flex;
+    flex-direction: column; /*Cabecera arriba, mensajes centro, input abajo*/
+    background-color: #cca5a5; /*Fondo claro para el area de chat*/
+}
+
+.chat-header {
+    color: white;
+    padding: 15px;
+    border-bottom: 1px solid #b85c3a; /*Línea de separación entre el header y el área de mensajes*/
+    text-align: center;
+}
+
+.mensajes-container {
+    flex-grow: 1; /*ocupa mensajes en el centro*/
+    padding: 40px;
+    display: flex;
+    justify-content: center; /*Centrar los mensajes en el área de chat*/
+    align-items: center; /*centra el contenido verticalmente*/
+}
+
+.mensaje-ia {
+    color: rgb(112, 45, 238);
+    max-width: 600px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* 5. INPUT DE MENSAJES */
+.input-area {
+    padding: 20px 40px;
+}
+
+.chat-form {
+    display: flex; /*input y botón en fila*/
+    max-width: 700px;
+    margin: 0 auto; /*centrar el formulario*/
+    background-color: #d3643b; /*Fondo del formulario*/
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /*Sombra suave para darle profundidad*/
 }
