@@ -1,38 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SERPROFES</title>
+    <title>Mi IA SaaS - Panel de Control</title>
     <title>Imagen de fondo</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <!-- Carrito de compras -->
- <h1>
-    HOLA VANESSA, BIENVENIDA A ESTE NUEVO SITIO WEB - IA SERPROFES
-</h1> 
- <h2>
-    ¿Que puede hacer mi asistente IA por ti?
-</h2>
-<ul>
-    <li>Generar rutinas de 15 minutos personalizadas</li>
-    <li>Calcular sus calorias diarias automaticamente</li>
-    <li>Avisarle de cuando beber agua durante el dia</li>
-</ul>
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class= "logo-area">
+                <h2>IA Master</h2>
+            </div>
+            <nav class="menu-lateral">
+                <button>+ Nuevo Chat</button>
+                <div class="historial">
+                    <p>Historia reciente ...</p>
+                    <ul>
+                        <li>¿Como hacer dieta?</li>
+                        <li>Receta de pizza</li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="perfil">
+                <span>Usuario Pro</span>
+            </div>
+        </aside>
 
-<img src="IA.jpg" alt="Logotipo de IA" width="300">
-<img src="https://smilecomunicacion.com/wp-contenido/uploads/2024/09/conceptos-de-la-ia.jpg.webp" alt="Conceptos de la IA" width="300">
-<!-- salto de linea -->
- <br>
- <!-- a href = es el enlace de la web -->
-<br><a href=" https://github.com/vamaote" target="_blank">Visita mi perfil de GitHub</a>
+        <main class="chat-area">
+            <header class="chat-header">
+                <h3>Conversacion Actual</h3>
+            </header>
 
-<h2>Habla con la IA</h2>
-<form>
-    <label>Tu petición</label>
-    <input type="text" placeholder="Ej: Eres un experto en programación, generame un index.html responsive">
-    <button type="button">Enviar a la IA</button>
-</form>
-</body>
-</html>
+            <section class="mensajes-container">
+                <div class="mensaje-ia">¡Hola! Soy tu asistente de inteligencia artificial. ¿En qué puedo ayudarte hoy?</div>
+            <section>
+
+                <footer class="input-area">
+                    <form class="chat-form">
+                        <input type="text" placeholder="Escribe tu mensaje aquí..." />
+                        <button type="submit">Enviar</button>
+                    </form>
+                </footer>
+            </section>
+        </main>
+     <div>
+<body>
+</html>         
