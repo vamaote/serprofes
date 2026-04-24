@@ -1,0 +1,45 @@
+/* AGREGANDO STILOS A LAS TARJETAS */
+/* 1. RESETEO BASICO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif , tahoma, arial, Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+    background-color: #a8a2a2;
+    padding: 50px;
+}
+
+
+/* 2. REPASO FLEXBOX */
+.contenedor-tarjetas {
+    display: flex;
+    gap: 40px;
+    margin-top: 40px;
+    justify-content: center; /*Tarjetas en la pantalla*/
+}
+
+/* DISEÑO BASE DE LA TARJETA */
+.tarjeta {
+    background-color: #dbd6d6;
+    width: 320px;
+    border-radius: 15px;
+    text-align: center;
+    padding: 40px 30px;
+
+    /* Magia 1: Sombra estatica suave */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+
+    /* Magia 2: Prepararemos la animacion */
+    /* si cambia de posicion o de sombra, que sea suavemente */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* el efecto wow */
+.tarjeta:hover {
+    transform: translateY(-10px); /* Eleva la tarjeta */
+    /* la tarjeta se hace mas grande y oscura */
+    box-shadow: 0 15px 20px rgba(148, 24, 24, 0.7); /* Sombra mas intensa */
+}
