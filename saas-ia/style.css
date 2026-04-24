@@ -81,3 +81,21 @@
     border-radius: 8px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /*Sombra suave para darle profundidad*/
 }
+
+.chat-form input {
+    flex-grow: 1; /*El input ocupa todo el espacio disponible*/
+    padding: 5px 15px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+    background-color: transparent;
+}
+.chat-form button {
+    background-color: #190eb3; /*Color del botón de enviar*/
+    border: none;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
