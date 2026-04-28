@@ -1,0 +1,123 @@
+/* --- Paleta de colores y Tipografía --- */
+:root {
+  --bg-color: #1a1a1a;        /* Fondo oscuro elegante */
+  --text-color: #f5f5f5;      /* Blanco suave */
+  --accent-color: #d4af37;    /* Dorado mate para detalles */
+  --header-bg: #000000;       /* Negro puro para el cabezal */
+  --font-main: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* --- Configuración General --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: var(--font-main);
+  line-height: 1.6;
+  padding-bottom: 50px;
+}
+
+/* --- Encabezado --- */
+header {
+  background-color: var(--header-bg);
+  color: var(--accent-color);
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 2.5rem;
+  font-weight: bold;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  border-bottom: 2px solid var(--accent-color);
+}
+
+/* --- Navegación --- */
+nav {
+  margin: 20px 0;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.nav-button {
+  text-decoration: none;
+  color: var(--text-color);
+  padding: 10px 20px;
+  border: 1px solid var(--accent-color);
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+.nav-button:hover {
+  background-color: var(--accent-color);
+  color: #000;
+}
+
+/* --- Galería de Imágenes --- */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  padding: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.thumb {
+  background-color: #2a2a2a;
+  padding: 15px; /* Efecto de paspartú o marco */
+  border: 1px solid #333;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  transition: transform 0.4s ease, border-color 0.4s ease;
+}
+
+.thumb:hover {
+  transform: translateY(-10px);
+  border-color: var(--accent-color);
+}
+
+.thumb img {
+  width: 100%;
+  height: auto;
+  display: block;
+  filter: grayscale(20%);
+  transition: filter 0.4s ease;
+}
+
+.thumb:hover img {
+  filter: grayscale(0%);
+}
+
+/* --- Pie de página --- */
+footer {
+  text-align: center;
+  margin-top: 50px;
+  padding: 20px;
+  font-size: 0.8rem;
+  color: #888;
+  border-top: 1px solid #333;
+}
+
+/* --- Ajustes para móviles --- */
+@media (max-width: 600px) {
+  header {
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+  }
+  
+  .gallery {
+    padding: 20px;
+  }
+}

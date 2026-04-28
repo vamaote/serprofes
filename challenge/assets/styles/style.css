@@ -1,0 +1,97 @@
+/* GRID MUSEO ARTE */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* 1. ESQUELETO GENERAL */
+body {
+    min-height: 100vh;
+    display: grid;
+    /* 15% al menu (dav) y resto fotos */
+    grid-template-columns: 15% 1fr;
+    grid-template-rows: 60px 1fr 30px;
+    grid-template-areas: 
+        "header header"
+        "nav gallery"
+        "footer footer";
+    background: #17363f; /* fondo oscuro elegante */
+    color: rgb(233, 228, 228); 
+    font-family: sans-serif;
+}  
+header {
+    grid-area: header;
+    padding-top: 15px;
+    background-color: #9c3434; /* fondo más oscuro para el header */
+    text-align: center;
+    font-size: 1.5em; /*1 rem equivale a 16px*/
+}
+footer {
+    grid-area: footer;
+    background-color: #1f1111; /* fondo más oscuro para el footer */
+    text-align: center;
+    padding: 5px;
+}
+
+/* 2. MENU LATERAL */
+
+nav {
+    grid-area: nav;
+    background-color: #e93c3c; /* fondo oscuro para el menú */
+    padding:20px;
+}
+nav ul {
+    list-style: none;
+}
+
+nav li {
+    margin-bottom: 15px;
+}
+
+nav a {
+    color: rgb(247, 246, 250);
+    text-decoration: none;
+    display: block; /*Hace que el enlace ocupe todo el ancho del menú para facilitar el clic*/
+    padding: 5px;
+}
+nav a:hover {
+    background: #0dcc2d; /* efecto hover para los enlaces */
+    border-radius: 5px;
+}
+
+/* 3. CONTENIDO PRINCIPAL */
+.gallery {
+    grid-area: gallery;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales*/
+    gap: 20px; /* Espacio entre las imágenes */
+    padding: 20px;
+    /* cajas 300px exactos de alto */
+    grid-template-rows: 300px;
+}
+.gallery img {
+    height: 100%;
+    width: 100%;
+    object-fit: scale-down; /* Asegura que la imagen cubra todo el espacio sin distorsionarse */
+    border-radius: 30px; /* Bordes redondeados para un toque elegante */
+    box-shadow: 0 4px 8px rgba(148, 135, 125, 0.2); /* Sombra para dar profundidad */
+}
+
+/* Las pinturas */
+.thumb {
+    border-radius: 10px; /* Bordes redondeados para las miniaturas */
+    overflow: hidden; /* Para que el contenido no se salga de los bordes redondeados */
+    border: 2px solid #0ce265; /* Borde blanco para destacar las miniaturas */
+}
+
+/* Las pinturas */
+.thumb img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain; /* Asegura que la imagen cubra todo el espacio sin distorsionarse */
+    transition: transform 0.3s; /* Transición suave para el efecto hover */    
+}
+
+.thumb img:hover {
+    transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
+}
