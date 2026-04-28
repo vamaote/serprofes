@@ -95,3 +95,16 @@ nav a:hover {
 .thumb img:hover {
     transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
 }
+
+/* 4. AJUSTE DE PORTADA */
+.gallery .portada {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery .portada img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px; /* Bordes redondeados para un toque elegante */
+}
