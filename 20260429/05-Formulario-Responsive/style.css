@@ -1,0 +1,118 @@
+/* 1. RESETEO WEB */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    /* EFECTO WOWW 1: FONDO DEGRADO */
+    background: linear-gradient(135deg, #50e682 0%, #7fccbe 100%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* la tarjeta blanca flotante */
+.form-container {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.9);
+    padding: 40px;
+    width: 450px; /*Ancho fijo para mantener la forma de la tarjeta */
+    text-align: center;
+}
+
+.form-container h2 {
+    margin-bottom: 10px;
+    color: #333;
+}
+.form-container p {
+    margin-bottom: 25px;
+    color: #666;
+}
+
+/* MAQUETACION DE INPUTS - ELIMINA LOS BORDES FEOS */
+
+.input-group
+{
+    margin-bottom: 20px;
+    text-align: left;
+}
+.input-group label{
+    margin-bottom: 5px;
+    display: block;
+    font-weight: bold;
+    color: #555;
+}
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #eee;
+    border-radius: 8px;
+    transition: border-color 0.8s ease;
+}
+.form-container input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+}
+.form-container button {
+    width: 100%;
+    padding: 12px;
+    background-color: #50e682;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.form-container button:hover {
+    background-color: #c0148c;
+}
+
+.input-group input:focus {
+    border-color: #085020;
+    outline: none;
+}
+
+.form-container a {
+    display: inline-block;
+    margin-top: 15px;
+    color: #50e682;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.form-container a:hover {
+    color: #085020;
+}
+
+.btn-enviar {
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.btn-enviar:hover {
+    background-color: #085020;
+    color: #333;
+    transform: scale(1.02); /*el boton crece un poquito*/
+}
+
+/* 2. EL SECRETO: RESPONSIVE DESIGN (MOVILES) */
+@media (max-width: 500px) {
+    .form-container {
+        width: 100%; /*Ocupa todo el ancho en móviles */
+        padding: 20px; /*Reducimos los margenes internos para móviles */
+    }
+    body{
+        background: #50e682; /*quitamos el efecto degradado para mejorar rendimiento*/
+    }
+}
+
