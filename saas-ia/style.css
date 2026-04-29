@@ -99,3 +99,42 @@
     border-radius: 5px;
     cursor: pointer;
 }
+
+/* SI LA PANTALLA ES DE TAMAÑO TABLET O MOVIL (MENOS DE 768PX) */
+
+/* MAGIA RESPONSIVE - ADAPTANDO EL CHAT A MOVILES */
+@media (max-width: 768px) {
+    .sidebar {
+        /* HACE QUUE LA BARRA SE DESAPAREZCA */
+        display: none;
+    }
+
+    /* 2. DAMOS MAS ESPACIO AL TEXTO DEL CHAT */
+    .mensajes-container {
+        padding: 20px;
+    }
+
+    /* 3. HACEMOS EL INPUT MAS GRANDE Y CENTRADO */
+    .chat-form {
+        flex-direction: row; /*input y botón en fila*/
+        padding: 5px;
+    }
+
+    .chat-form input {
+        font-size: 0.9rem; /*Hacemos el texto del input un poco más grande para facilitar la lectura en móviles*/
+    }
+
+    .chat-form button {
+        padding: 8px 12px; /*Hacemos el botón un poco más grande para facilitar el toque en móviles*/
+    }
+}
+
+@media (max-width: 480px) {
+    .chat-header h3{
+        font-size: 1.1rem; /*Hacemos el texto del header un poco más grande para facilitar la lectura en móviles pequeños*/
+    }
+
+    .mensaje-ia {
+        font-size: 0.95rem; /*Hacemos el texto de los mensajes un poco más grande para facilitar la lectura en móviles pequeños*/
+    }
+}
