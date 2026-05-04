@@ -131,15 +131,57 @@ anim*/
 }
 
 /* 7. RESPONSIVE DESIGN */
+/* Para moviles y tablets */
 
-@media (max-width: 991px) {
-    .hero {
-        padding: 10px 5%;
-    }
+@media (max-width: 850px) {
+    /* 1. Achicamos el texto principal */
     .content h1 {
-        font-size: 50px;
+        font-size: 45px;
     }
+    /* 2. ocultamos la lista del menu */
+    nav ul {
+        display: none;
+    }
+    .content {
+        margin-top: 15%;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Arreglamos la imagen: Sacamos el position: absolute para que ponga abajo el texto */
+
     .feature-img {
-        width: 400px;
+        position: relative;
+        width: 90%;
+        margin-top: 30px;
+        max-width: 350px;
+        /* cancelar el absolute */
+        display: block;
+        /* margin centra automaticamente */
+        margin: 40px auto 0;
+        right: 0;
+    }
+}
+
+/* ajuste para moviles mas pequeños */
+@media (max-width: 500px) {
+    /* achicamos el texto principal */
+    .content h1 {
+        font-size: 35px;
+    }
+    /* ocultamos el 'Log in' para hacer un sitio*/
+    nav .logn-btn {
+        display: none;
+    }
+    /* Reducimos el boton de arriba (download app) */
+    nav . .btn {
+        padding: 10px 20px; /*Mucho mas pequeño*/
+        font-size: 12px; /*Lectura mas pequeña*/
+    }
+     /* Reducimos el boton de abajo (get started) */
+    .content .btn {
+        padding: 12px 40px; /*Mucho mas pequeño*/
+        font-size: 14px; /*Lectura mas pequeña*/
     }
 }
