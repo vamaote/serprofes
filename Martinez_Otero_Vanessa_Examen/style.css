@@ -1,0 +1,45 @@
+* {
+    margin: 13px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    background-color: #65c6f3;
+    font-family: Arial, sans-serif;
+    padding: 50px;
+    
+}
+.contenedor-tarjetas {
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+.tarjeta {
+    background-color: #dbd6d6;
+    width: 350px;
+    border-radius: 20px;
+    text-align: center;
+    padding: 40px;
+
+    box-shadow: 0 4px 20px rgba(248, 12, 12, 0.5);
+
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+.tarjeta:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7); 
+}
+.tarjeta button {
+    background-color: #df0e88;
+    color: #fff;
+    border: none;
+    padding: 20px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
