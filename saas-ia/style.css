@@ -48,7 +48,7 @@
 .chat-header {
     color: white;
     padding: 15px;
-    border-bottom: 1px solid #b85c3a; /*Línea de separación entre el header y el área de mensajes*/
+    border-bottom: 1px solid #fabaa3; /*Línea de separación entre el header y el área de mensajes*/
     text-align: center;
 }
 
@@ -61,7 +61,7 @@
 }
 
 .mensaje-ia {
-    color: rgb(112, 45, 238);
+    color: rgb(69, 5, 189);
     max-width: 600px;
     font-size: 1.1rem;
     line-height: 1.6;
@@ -76,10 +76,10 @@
     display: flex; /*input y botón en fila*/
     max-width: 700px;
     margin: 0 auto; /*centrar el formulario*/
-    background-color: #d3643b; /*Fondo del formulario*/
+    background-color: #ddbfab; /*Fondo del formulario*/
     padding: 10px;
     border-radius: 8px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /*Sombra suave para darle profundidad*/
+    box-shadow: 0 0 15px rgba(241, 229, 229, 0.2); /*Sombra suave para darle profundidad*/
 }
 
 .chat-form input {
