@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: #f4f4f9;
+    text-align: center;
+    padding: 50px;
+}
+
+input, button {
+    padding: 10px;
+    font-size: 1.2rem;
+    margin: 5px;
+}
+
+#pantalla-cesta {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    border: 2px dashed #333;
+    padding: 20px;
+    background: #fff;
+}
